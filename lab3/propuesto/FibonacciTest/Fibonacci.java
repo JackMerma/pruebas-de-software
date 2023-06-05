@@ -1,5 +1,6 @@
 package FibonacciTest;
 import java.math.BigInteger;
+import java.security.Principal;
 
 public class Fibonacci {
     private BigInteger[][] multiplyMatrix(BigInteger[][] m1, BigInteger[][] m2){
@@ -20,7 +21,6 @@ public class Fibonacci {
     public BigInteger fibonacci(long n){
         if(n < 0){ return new BigInteger("-1");}
         if(n == 0){ return BigInteger.ZERO;}
-        if(n < 3){ return BigInteger.ONE;}
 
         n -= 2;
         BigInteger[][] principal = {{BigInteger.ONE, BigInteger.ONE}, {BigInteger.ONE, BigInteger.ZERO}};

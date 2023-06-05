@@ -33,7 +33,7 @@ public class FibonacciTest{
         assertEquals(result, f);
     } 
     @Test 
-    public void fibonacciTres(){
+    public void fibonacciGrande(){
         BigInteger f = fibo.fibonacci(101);
         BigInteger result = new BigInteger("573147844013817084101");
         assertEquals(result, f);
